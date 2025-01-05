@@ -152,7 +152,7 @@ nav a, nav a:visited {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .w50 {
         display: flex;
         flex-direction: row;
@@ -195,7 +195,7 @@ nav a, nav a:visited {
     margin-top: 4em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .personajes {
         grid-template-columns: repeat(4, 1fr);
 
@@ -238,7 +238,7 @@ nav a, nav a:visited {
     max-width: min(70em, 100%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .character-bio {
         flex-direction: row;
     }
