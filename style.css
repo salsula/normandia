@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    display: block;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(24px);
+    z-index: 1;
+    position: fixed;
+}
+
+nav div {
+    display: inherit;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a, nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    background-image: url("images/normandia.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrow-down {
+    margin-top: -4rem;
+}
+
+.arrow-down img {
+    margin: 0 auto;
+    filter: drop-shadow(0 0 2px rgb(0, 0, 0, .8));
+    text-align: center;
+}
+
+.nombre-seccion {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5;
+    color: #8e8e8e;
+}
+
+.divider {
+    height: 4em;
+    background-color: white;
+}
+
+.w100 {
+    background-color: white;
+    color: black
+}
+
+.w100-container {
+    max-width: 100%;
+    margin-top: 4em;
+}
+
+.w70 {
+    max-width: min(70em, 100%);
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.w70 img {
+    outline: .2rem solid white;
+    border-radius: 1rem;
+}
+
+.w35 {
+    max-width: min(35em, 90%);
+    text-align: center;
+    margin: 0 auto 4em auto;
+}
+
+.w50 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+}
+
+.w50 img {
+    max-width: 100%;
+}
+
+.w50 div {
+    max-width: 100%;
+    padding: 2em 2em;
+    text-align: center;
+}
+
+.w50-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    align-items: center;
+}
+
+.w50-reverse img {
+    max-width: 100%;
+}
+
+.w50-reverse div {
+    max-width: 100%;
+    padding: 2em 2em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .w50 {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .w50 img {
+        max-width: 50%;
+    }
+    
+    .w50 div {
+        max-width: 50%;
+        padding: 0 4em;
+        text-align: left;
+    }
+
+    .w50-reverse {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .w50-reverse img {
+        max-width: 50%;
+    }
+    
+    .w50-reverse div {
+        max-width: 50%;
+        padding: 0 4em;
+        text-align: left;
+    }
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-top: 4em;
+}
+
+@media (min-width: 768px) {
+    .personajes {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+.character-card {
+    text-decoration: none;
+}
+
+.character-card div {
+    overflow: hidden;
+    outline: .2rem solid white;
+    border-radius: 1rem;
+}
+
+.character-card:hover img {
+    transform: scale(1.1);
+    transition: linear .2s;
+}
+
+.card-name {
+    color: white;
+    padding: .5em 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.character-bio-container {
+    padding-top: 56px;
+}
+
+.character-bio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2em;
+    gap: 2rem;
+    max-width: min(70em, 100%);
+}
+
+@media (min-width: 768px) {
+    .character-bio {
+        flex-direction: row;
+    }
+}
+
+.character-bio span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.character-bio img {
+    height: 100%;
+    border-radius: 1rem;
+    outline: .2rem solid #8e8e8e;
+}
+
+.arrow-container {
+    width: 100%;
+    position: absolute;
+}
+
+.arrows {
+    display: flex;
+    max-width: min(70em, 100%);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+}  
+
+:root {
+    --max-width: min(70em, 100%);
+    --section-max-width: min(35em, 90%);
+    --img-max-width: min(50%, 100%);
+}
