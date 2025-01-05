@@ -113,9 +113,15 @@ nav a, nav a:visited {
 }
 
 .w35 {
-    max-width: min(35em, 90%);
+    max-width: 100%;
     text-align: center;
     margin: 0 auto 4em auto;
+}
+
+@media (min-width: 1200px) {
+    .w35 {
+        max-width: min(35em, 90%);
+    }
 }
 
 .w50 {
@@ -131,7 +137,7 @@ nav a, nav a:visited {
 
 .w50 div {
     max-width: 100%;
-    padding: 2em 2em;
+    padding: 2em;
     text-align: center;
 }
 
