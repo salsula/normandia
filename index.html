@@ -2,9 +2,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <nav>
-    <a href="#">
-        <img src="images/logo.svg" height="24">
-    </a>
+    <div class="logo-container">
+        <a href="#">
+            <img class="logo" src="images/me_logo_compressed.png">
+        </a>
+    </div>
     <div>
         <a href="#bienvenida">Bienvenida</a>
         <a href="#tecnologia">Tecnología</a>
@@ -14,9 +16,6 @@
 <div id="#" class="home"></div>
 <!--bienvenida-->
 <main>
-    <a href="#bienvenida" class="arrow-down">
-        <img src="images/flecha.svg" height="64">
-    </a>
     <section id="bienvenida">
         <div class="w70">
             <div class="w35">
@@ -28,7 +27,7 @@
         </div>
     </section>
     <!--Tecnología-->
-    <div id="tecnologia" class="divider"></div>
+    <div id="tecnologia" class="spacer"></div>
     <secton>
         <div class="w100">
             <span class="nombre-seccion">Tecnología</span>
@@ -36,13 +35,13 @@
                 <div class="w50">
                     <img src="images/normandia-close-up.jpg">
                     <div>
-                        <h2>Completamente invisible</h2>
+                        <h3>Completamente invisible</h3>
                         <p>El sistema de camuflaje SCI (sumidero de calor interno) le permite a la Normandía almacenar sus emisiones caloríficas al interior del casco, haciéndola indetectable para los radares enemigos por hasta tres horas de vuelo continuo.</p>
                     </div>
                 </div>
                 <div class="w50-reverse">
                     <div>
-                        <h2>Eficiencia y velocidad</h2>
+                        <h3>Eficiencia y velocidad</h3>
                         <p>Lo anterior no sería posible sin el revolucionario motor Tantalus. Dos veces más potente que el de una nave convencional, le permite a la Normandía volar sin la necesidad de propulsores y viajar a velocidades más rápidas que la luz por más tiempo.</p>
                     </div>
                     <img src="images/motor.jpg">
@@ -51,48 +50,49 @@
         </div>
     </secton>
     <!--Tripulación-->
-    <section id="tripulacion">
+    <div id="tripulacion" class="spacer"></div>
+    <section>
         <div class="w70">
             <span class="nombre-seccion">Tripulación</span>
-            <h2>Conoce a tus compañeros</h2>
+            <h2>¡Conoce a tus compañeros!</h2>
             <div class="personajes">
-                <a href="ashley.html" class="character-card">
+                <a href="tripulacion/ashley.html" class="character-card">
                     <div>
                         <img src="images/ashley.jpg">
                     </div>
                     <span class="card-name">Ashley</span>
                 </a>
-                <a href="#" class="character-card">
+                <a href="tripulacion/garrus.html" class="character-card">
                     <div>
                         <img src="images/garrus.jpg">
                     </div>
                     <span class="card-name">Garrus</span>
                 </a>
-                <a href="#" class="character-card">
+                <a href="tripulacion/joker.html" class="character-card">
                     <div>
                         <img src="images/joker.jpg">
                     </div>
                     <span class="card-name">Joker</span>
                 </a>
-                <a href="#" class="character-card">
+                <a href="tripulacion/kaidan.html" class="character-card">
                     <div>
                         <img src="images/kaidan.jpg">
                     </div>
                     <span class="card-name">Kaidan</span>
                 </a>
-                <a href="#" class="character-card">
+                <a href="tripulacion/liara.html" class="character-card">
                     <div>
                         <img src="images/liara.jpg">
                     </div>
                     <span class="card-name">Liara</span>
                 </a>
-                <a href="#" class="character-card">
+                <a href="tripulacion/tali.html" class="character-card">
                     <div>
                         <img src="images/tali.jpg">
                     </div>
                     <span class="card-name">Tali</span>
                 </a>
-                <a href="#" class="character-card">
+                <a href="tripulacion/wrex.html" class="character-card">
                     <div>
                         <img src="images/wrex.jpg">
                     </div>
