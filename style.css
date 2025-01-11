@@ -110,6 +110,13 @@ nav {
 
 .hero-text-container {
     margin: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .hero-text-container {
+        text-align: left;
+    }
 }
 
 section {
