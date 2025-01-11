@@ -23,16 +23,17 @@ h2, h3 {
     color: #fff;
 }
 
-h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-}
-
-h3 {
+h2, h3 {
     font-size: 2rem;
     font-weight: 700;
 }
 
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+}
 
 img {
     width: 100%;
