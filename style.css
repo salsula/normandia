@@ -202,7 +202,7 @@ section {
 }
 
 .character-bio-container {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), #001633), url(images/tierra.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), #001633), url(images/tierra.jpg);
     padding-top: 80px;
 }
 
